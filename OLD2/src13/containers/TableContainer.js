@@ -1,0 +1,139 @@
+import React, { Component } from "react";
+//import PropTypes from 'prop-types';
+import { connect } from "react-redux";
+import { selector } from "../actions";
+import DealTable from "../components/Table";
+import { capitalMapping } from "../data";
+import { mergeData } from "./utils/util";
+import R from "ramda";
+
+class TableContainer extends Component {
+  render() {
+    console.log("projectStatuses " + this.props.projectStatuses);
+    return (
+      <div>
+        <DealTable
+          onselect={this.props.f}
+          data={this.props.items}
+          capitalMapping={capitalMapping}
+          select={[this.props.select]}
+        />
+
+      </div>
+    );
+  }
+}
+const mergeStuff = () => {
+  //return mergeData(prjs,typs,statuses)
+};
+
+const f2 = (prjects, projTypes, projStatuses) => {
+  console.log(" fprojects " + JSON.stringify(prjects));
+  if (!prjects) {
+    return;
+  }
+  const getObj = (x, arr) => R.find(y => y.Id === x, arr);
+  const getTypesObj = (x, prjTypes) => getObj(x.ProjectType_Id, prjTypes);
+  ///NULL PROJECTS>STATUS ID CAUSES PROBLEMS
+  ///const getStatusObj = (x, prjStatuses) => getObj("ede2986a-8ae1-45c4-bfa5-dc06c57bd59b", prjStatuses);
+  const getStatusObj = (x, prjStatuses) =>
+    getObj(x.ProjectStatus_Id, prjStatuses);
+  const strName = x => {
+    if (!x) {
+      return;
+    }
+    return R.prop("Name", x);
+  };
+
+  const d1 = R.map(
+    x => R.merge(x, { projectType: strName(getTypesObj(x, projTypes)) }),
+    prjects
+  );
+
+  //console.log('getstatus obj test '+getStatusObj(prjects[0], projStatuses))
+  console.log(" ");
+  console.log(
+    "getstatus obj test1 " +
+      JSON.stringify(
+        getObj("fe3424aa-66ee-4dbd-90ec-0244cea112d4", projStatuses)
+      )
+  );
+  console.log(
+    "getstatus obj test2 " + JSON.stringify(getTypesObj(prjects[3], projTypes))
+  );
+  console.log("getstatus obj test3 " + JSON.stringify(prjects[0]));
+  console.log("getstatus obj test4 " + strName(projTypes[0]));
+  const d2 = R.map(
+    x => R.merge(x, { statusType: strName(getStatusObj(x, projStatuses)) }),
+    d1
+  );
+  //return R.merge(d2,d1);
+
+  //return R.merge(d1, d2);
+  console.log('d1 '+JSON.stringify(d1))
+    console.log('d2 '+JSON.stringify(d2))
+
+  return d2
+};
+const mapStateToProps = (state, ownProps) => ({
+  items: state.data.projects
+    ? f2(
+        state.data.projects,
+        state.data.projectTypes,
+        state.data.projectStatuses
+      )
+    : state.data.items,
+
+  select: state.data.select,
+  projects: f2(
+    state.data.projects,
+    state.data.projectTypes,
+    state.data.projectStatuses
+  ),
+  projectTypes: [
+    { Name: "TYPE ONE", Id: "dff212ef-2cf1-4917-a278-e3591720dc41" }
+  ],
+
+  projectStatuses: [
+    {
+      Name: "Active",
+      Code: "",
+      Icon: "",
+      DisplayType: 0,
+      Order: 3,
+      IsDefaultValue: false,
+      IsActive: true,
+      ChartColor: "",
+      Id: "fe3424aa-66ee-4dbd-90ec-0244cea112d4",
+      IdExternal: null
+    },
+    {
+      Name: "Active2",
+      Code: "",
+      Icon: "",
+      DisplayType: 0,
+      Order: 3,
+      IsDefaultValue: false,
+      IsActive: true,
+      ChartColor: "",
+      Id: "ede2986a-8ae1-45c4-bfa5-dc06c57bd59b",
+      IdExternal: null
+    }
+  ]
+  // ? mergeStuff(state.data.projects,state.data.projectType,state.data.projectStatuses): state.data.projects,
+});
+
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  f: x => {
+    dispatch(selector(x));
+  },
+
+  onClick2: id => {
+    //dispatch(deleteNotification(id));
+  }
+});
+const TableContainer2 = connect(mapStateToProps, mapDispatchToProps)(
+  TableContainer
+);
+
+export default TableContainer2;

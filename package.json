@@ -1,0 +1,35 @@
+{
+  "name": "deal-flow",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "box-ui-elements": "^1.0.2",
+    "material-ui": "^0.18.7",
+    "material-ui-table": "^0.1.2",
+    "moment": "^2.18.1",
+    "ramda": "^0.24.1",
+    "react": "^15.6.1",
+    "react-currency-input": "^1.3.3",
+    "react-data-grid": "^2.0.52",
+    "react-data-grid-addons": "^2.0.52",
+    "react-dom": "^15.6.1",
+    "react-materialui-currency": "git+https://github.com/helderfarias/react-materialui-currency.git",
+    "react-quill": "^1.0.0",
+    "react-redux": "^5.0.5",
+    "react-scroll": "^1.5.4",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.7.1",
+    "redux-thunk": "^2.2.0",
+    "throttle-debounce": "^1.0.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.10",
+    "remote-redux-devtools": "^0.5.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
