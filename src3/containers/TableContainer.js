@@ -14,13 +14,13 @@ class TableContainer extends Component {
     this.props.f(1);
   }
   render() {
-    console.log("projectStatuses " + this.props.projectStatuses);
+    console.log("projectStatuses " + this.props.projects);
     return (
       <div>
         {this.props.projects
           ? <DealTable
               onselect={this.props.f}
-              data={this.props.items}
+              data={this.props.projects}
               capitalMapping={capitalMapping}
               select={[this.props.select]}
             />
@@ -31,14 +31,16 @@ class TableContainer extends Component {
 }
 
 const f2 = (prjects, projTypes, projStatuses) => {
-  //console.log(" fprojects " + JSON.stringify(prjects));
-  if (!prjects) {
+  console.log(" fprojects " + JSON.stringify(prjects));
+  console.log(" projTypes " + JSON.stringify(projTypes));
+  console.log(" projStatuses " + JSON.stringify(projStatuses));
+  console.log("_____")
+  if (!prjects || projTypes || projStatuses) {
     return;
   }
   const getObj = (x, arr) => R.find(y => y.Id === x, arr);
   const getTypesObj = (x, prjTypes) => getObj(x.ProjectType_Id, prjTypes);
-  ///NULL PROJECTS>STATUS ID CAUSES PROBLEMS
-  ///const getStatusObj = (x, prjStatuses) => getObj("ede2986a-8ae1-45c4-bfa5-dc06c57bd59b", prjStatuses);
+
   const getStatusObj = (x, prjStatuses) => getObj(x.ProjectStatus_Id, prjStatuses);
     const strName = x => {
       if (!x) {
@@ -62,19 +64,12 @@ const f2 = (prjects, projTypes, projStatuses) => {
   return d2;
 };
 const mapStateToProps = (state, ownProps) => ({
-  items: state.data.projects
-    ? f2(
-        state.data.projects,
-        state.data.projectTypes,
-        state.data.projectStatuses
-      )
-    : state.data.items,
+
   select: state.data.select,
-  projects: f2(
+  projects:
     state.data.projects,
-    state.data.projectTypes,
-    state.data.projectStatuses
-  ),
+
+   
 
   });
 

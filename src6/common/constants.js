@@ -4,7 +4,6 @@ export const routes = {
 };
 
  
-
 export const colors = {
   border: '#ECECEC',
   background: '#FFFFFF',

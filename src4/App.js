@@ -27,7 +27,7 @@ import messages from 'box-ui-elements/lib/i18n/en-US';
 import 'box-ui-elements/dist/explorer.css';
 
 /* BOX COM TOKE */
-const token = 'sKzZitFZ2eIfuFYBuWl4z6yW2RD1LI1R';
+const token = 'ZiOHuo9WLxmbnnqCiAHMVzNNpaKPjT3j';
 const getLocalizedMessage = (id, replacements) =>
     messages[id].replace(/{\s*(\w+)\s*}/g, (match, key) => replacements[key]);
 
@@ -41,7 +41,7 @@ class App extends Component {
       selected: [0],
       data: tablePage,
       selectedObj: tablePage[0],
-      tab: "a"
+      tab: "c"
     };
     injectTapEventPlugin();
   }
@@ -63,20 +63,6 @@ class App extends Component {
             <TableContainer />
             <hr />
             <Tabs value={this.state.tab} onChange={this.handleChange} >
-              <Tab icon={<ViewList />} label="Project documents" value="a">
-                <div style={{ padding: 20 }}>
-                  <h3>DOCUMENTS FOR SELECTED PROJECT -- (connected to Box.com API; currently with 1 hour dev token)</h3>
-
-                    <ContentExplorer
-              token={token}
-              getLocalizedMessage={getLocalizedMessage}
-              rootFolderId='0'
-              logoUrl='box'
-              canPreview={true}
-          />
-                </div>
-              </Tab>
-
               <Tab icon={<NoteAdd />} label="Project recommendation" value="c">
                 <div>
                   <RecommendationContainer />

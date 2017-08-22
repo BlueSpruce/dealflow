@@ -13,6 +13,7 @@
     "react-data-grid": "^2.0.52",
     "react-data-grid-addons": "^2.0.52",
     "react-dom": "^15.6.1",
+    "react-materialize": "^1.0.10",
     "react-materialui-currency": "git+https://github.com/helderfarias/react-materialui-currency.git",
     "react-quill": "^1.0.0",
     "react-redux": "^5.0.5",
@@ -20,7 +21,8 @@
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.7.1",
     "redux-thunk": "^2.2.0",
-    "throttle-debounce": "^1.0.1"
+    "throttle-debounce": "^1.0.1",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "react-scripts": "1.0.10",

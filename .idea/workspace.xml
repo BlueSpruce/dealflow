@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae4f4ea1-893b-43d9-849e-925488f75cc8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LATEST/src/asyncAwaitErrorThow-eg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src1/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src1/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src1/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src1/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src1/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src1/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src1/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src1/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src1/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src1/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src1/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src2/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src3/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src4/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src5/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src6/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src7/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src8/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD/src9/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src1/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src10/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src11/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src12/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/actions/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/containers/utils/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src13/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/actions/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/containers/utils/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src14/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/actions/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/containers/utils/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src15/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src16/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src17/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src18/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src19/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src2/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src3/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src4/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src5/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src6/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src7/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src8/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src9/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD2/src_ASYNC2/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src2/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src3/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src4/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src5/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src6/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/common/Constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src7/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/common/Constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/OLD3/src8/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/delete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/common/Constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src1/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/common/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src10/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/common/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src11/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/common/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src12/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/common/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src13/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/common/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src14/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/common/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src15/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/common/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src16/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/common/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src7/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/common/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src8/utils/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/App.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/App.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/App.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/App1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/App2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/App3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/actions/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/actions/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/common/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/common/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/components/Documents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/components/Form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/components/Table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/components/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/containers/FormContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/containers/RecommendationContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/containers/TableContainer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/containers/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/images/BlueSpruce_LogoOnly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/images/material_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/images/material_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/reducers/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/registerServiceWorker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/store.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/theme-default.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/utils/colorManipulator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src9/utils/utils.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/App.js" afterPath="$PROJECT_DIR$/LATEST/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/actions/index.js" afterPath="$PROJECT_DIR$/LATEST/src/actions/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/common/constants.js" afterPath="$PROJECT_DIR$/LATEST/src/common/constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/common/http.js" afterPath="$PROJECT_DIR$/LATEST/src/common/http.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/components/Form.js" afterPath="$PROJECT_DIR$/LATEST/src/components/Form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/components/Table.js" afterPath="$PROJECT_DIR$/LATEST/src/components/Table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/containers/FormContainer.js" afterPath="$PROJECT_DIR$/LATEST/src/containers/FormContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/containers/RecommendationContainer.js" afterPath="$PROJECT_DIR$/LATEST/src/containers/RecommendationContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/containers/TableContainer.js" afterPath="$PROJECT_DIR$/LATEST/src/containers/TableContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/data.js" afterPath="$PROJECT_DIR$/LATEST/src/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/reducers/index.js" afterPath="$PROJECT_DIR$/LATEST/src/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LATEST/src/utils/utils.js" afterPath="$PROJECT_DIR$/LATEST/src/utils/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/http.js" afterPath="$PROJECT_DIR$/src/common/http.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Form.js" afterPath="$PROJECT_DIR$/src/components/Form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Table.js" afterPath="$PROJECT_DIR$/src/components/Table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/FormContainer.js" afterPath="$PROJECT_DIR$/src/containers/FormContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/RecommendationContainer.js" afterPath="$PROJECT_DIR$/src/containers/RecommendationContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/TableContainer.js" afterPath="$PROJECT_DIR$/src/containers/TableContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data.js" afterPath="$PROJECT_DIR$/src/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src2/App.js" afterPath="$PROJECT_DIR$/src2/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src2/actions/index.js" afterPath="$PROJECT_DIR$/src2/actions/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src2/common/Constants.js" afterPath="$PROJECT_DIR$/src2/common/Constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src2/common/http.js" afterPath="$PROJECT_DIR$/src2/common/http.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src2/components/Form.js" afterPath="$PROJECT_DIR$/src2/components/Form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src2/containers/FormContainer.js" afterPath="$PROJECT_DIR$/src2/containers/FormContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src2/containers/RecommendationContainer.js" afterPath="$PROJECT_DIR$/src2/containers/RecommendationContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src2/containers/TableContainer.js" afterPath="$PROJECT_DIR$/src2/containers/TableContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src2/data.js" afterPath="$PROJECT_DIR$/src2/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src2/reducers/index.js" afterPath="$PROJECT_DIR$/src2/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src2/utils/utils.js" afterPath="$PROJECT_DIR$/src2/utils/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src3/App.js" afterPath="$PROJECT_DIR$/src3/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src3/actions/index.js" afterPath="$PROJECT_DIR$/src3/actions/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src3/common/Constants.js" afterPath="$PROJECT_DIR$/src3/common/Constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src3/common/http.js" afterPath="$PROJECT_DIR$/src3/common/http.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src3/components/Form.js" afterPath="$PROJECT_DIR$/src3/components/Form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src3/containers/FormContainer.js" afterPath="$PROJECT_DIR$/src3/containers/FormContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src3/containers/RecommendationContainer.js" afterPath="$PROJECT_DIR$/src3/containers/RecommendationContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src3/containers/TableContainer.js" afterPath="$PROJECT_DIR$/src3/containers/TableContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src3/data.js" afterPath="$PROJECT_DIR$/src3/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src3/reducers/index.js" afterPath="$PROJECT_DIR$/src3/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src3/utils/utils.js" afterPath="$PROJECT_DIR$/src3/utils/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src4/App.js" afterPath="$PROJECT_DIR$/src4/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src4/actions/index.js" afterPath="$PROJECT_DIR$/src4/actions/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src4/common/constants.js" afterPath="$PROJECT_DIR$/src4/common/constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src4/common/http.js" afterPath="$PROJECT_DIR$/src4/common/http.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src4/components/Form.js" afterPath="$PROJECT_DIR$/src4/components/Form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src4/containers/FormContainer.js" afterPath="$PROJECT_DIR$/src4/containers/FormContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src4/containers/RecommendationContainer.js" afterPath="$PROJECT_DIR$/src4/containers/RecommendationContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src4/containers/TableContainer.js" afterPath="$PROJECT_DIR$/src4/containers/TableContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src4/data.js" afterPath="$PROJECT_DIR$/src4/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src4/reducers/index.js" afterPath="$PROJECT_DIR$/src4/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src4/utils/utils.js" afterPath="$PROJECT_DIR$/src4/utils/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/App.js" afterPath="$PROJECT_DIR$/src5/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/actions/index.js" afterPath="$PROJECT_DIR$/src5/actions/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/common/constants.js" afterPath="$PROJECT_DIR$/src5/common/constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/common/http.js" afterPath="$PROJECT_DIR$/src5/common/http.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/components/Form.js" afterPath="$PROJECT_DIR$/src5/components/Form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/components/Table.js" afterPath="$PROJECT_DIR$/src5/components/Table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/containers/FormContainer.js" afterPath="$PROJECT_DIR$/src5/containers/FormContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/containers/RecommendationContainer.js" afterPath="$PROJECT_DIR$/src5/containers/RecommendationContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/containers/TableContainer.js" afterPath="$PROJECT_DIR$/src5/containers/TableContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/data.js" afterPath="$PROJECT_DIR$/src5/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/reducers/index.js" afterPath="$PROJECT_DIR$/src5/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src5/utils/utils.js" afterPath="$PROJECT_DIR$/src5/utils/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/App.js" afterPath="$PROJECT_DIR$/src6/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/actions/index.js" afterPath="$PROJECT_DIR$/src6/actions/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/common/constants.js" afterPath="$PROJECT_DIR$/src6/common/constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/common/http.js" afterPath="$PROJECT_DIR$/src6/common/http.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/components/Form.js" afterPath="$PROJECT_DIR$/src6/components/Form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/components/Table.js" afterPath="$PROJECT_DIR$/src6/components/Table.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/containers/FormContainer.js" afterPath="$PROJECT_DIR$/src6/containers/FormContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/containers/RecommendationContainer.js" afterPath="$PROJECT_DIR$/src6/containers/RecommendationContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/containers/TableContainer.js" afterPath="$PROJECT_DIR$/src6/containers/TableContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/data.js" afterPath="$PROJECT_DIR$/src6/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/reducers/index.js" afterPath="$PROJECT_DIR$/src6/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src6/utils/utils.js" afterPath="$PROJECT_DIR$/src6/utils/utils.js" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="21" column="72" lean-forward="false" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormContainer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/FormContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/actions/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1955" />
+    <option name="y" value="23" />
+    <option name="width" value="2045" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deal-flow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deal-flow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deal-flow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deal-flow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deal-flow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deal-flow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="containers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae4f4ea1-893b-43d9-849e-925488f75cc8" name="Default" comment="" />
+      <created>1502820855916</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1502820855916</updated>
+      <workItem from="1502820857863" duration="280000" />
+      <workItem from="1503409197329" duration="654000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="934000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1955" y="23" width="2045" height="1057" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1729249" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="72" lean-forward="false" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/FormContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

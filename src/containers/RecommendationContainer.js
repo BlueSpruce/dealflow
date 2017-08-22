@@ -4,62 +4,27 @@ import { connect } from "react-redux";
 import { acts } from "../actions";
 import ReactQuill from "react-quill";
 import { debounce } from "throttle-debounce";
-
+import Wyswyg from './wyswyg'
 
 class RecommendationContainer extends Component {
   constructor(props) {
     super(props);
-    this.handleChangeQuill = this.handleChangeQuill.bind(this);
+this.handleChangeQuill = this.handleChangeQuill.bind(this);
   }
 
-  modules = {
-    toolbar: [
-      [{ header: [1, 2, false] }],
-      ["bold", "italic", "underline", "strike", "blockquote"],
-      [
-        { list: "ordered" },
-        { list: "bullet" },
-        { indent: "-1" },
-        { indent: "+1" }
-      ],
-      ["link", "image"],
-      ["clean"],
-      [{ color: [] }, { background: [] }]
-    ]
-  };
-
-  formats = [
-    "header",
-    "bold",
-    "italic",
-    "underline",
-    "strike",
-    "blockquote",
-    "list",
-    "bullet",
-    "indent",
-    "link",
-    "image",
-    "color",
-    "background"
-  ];
   handleChangeQuill(value) {
-    this.props.f("recommendation", value,this.props.selectedObj.Id);
+
+      console.log('handleChangeQuill   ')
+   this.props.f("recommendation", value,this.props.selectedObj.Id);
   }
 
   render() {
     return (
       <div>
-{this.props.selectedObj ?
-        <ReactQuill
-          onChange={debounce(500, this.handleChangeQuill)}
-          placeholder={this.props.placeholder}
-          value={this.props.selectedObj.recommendation}
-          theme={"snow"}
-          modules={this.modules}
-          formats={this.formats}
-        />
-      : null
+{this.props.projects && this.props.select
+    ? <Wyswyg data={this.props.selectedObj} f={this.props.f}/>
+     
+  : null
     }
       </div>
     );
@@ -68,7 +33,11 @@ class RecommendationContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => ({
   //selectedObj : state.data.items[state.data.select]
-  selectedObj: state.data.projects ? state.data.projects[state.data.select-1] : null
+  projects: state.data.projects,
+  selectedObj: state.data.projects
+    ? state.data.projects[state.data.select - 1]
+    : null,
+    select: state.data.select
 });
 const mapDispatchToProps = (dispatch, ownProps) => ({
   f: (name, value, id) => {
@@ -82,5 +51,4 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
 const RecommendationContainer2 = connect(mapStateToProps, mapDispatchToProps)(
   RecommendationContainer
 );
-
 export default RecommendationContainer2;

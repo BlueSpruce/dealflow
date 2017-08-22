@@ -9,7 +9,8 @@ export const numberAddCommas = (x) => {
      return x ? x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") :null
 }
 export const prependDollarSign = (n) => {
-  return `$${n}`
+  return R.test(/^[$]/, n) ?   n   : `$${n}`
+
 }
 
 

@@ -1,17 +1,25 @@
 export const capitalMapping = ['O','100-250k','250-500k' ,'500k-1M' ,'1M-5M' ,'5M+']
-export const selectFinancials =[{name:'N/A',value:'N/A'}, {name:'Pending',value:'Pending'}, {name:'Complete',value:'Complete'}]
-export const selectLegal = [{name:'N/A',value:'N/A'}, {name:'Pending',value:'Pending'}, {name:'Complete',value:'Complete'}]
-export const selectBackground = [{name:'Pending',value:'Pending'}, {name:'Passed',value:'Passed'}, {name:'Failed',value:'Failed'}]
-export const selectReviewStatus = [{name:'New',value:'New'}, {name:'Pending',value:'Pending'}, {name:'Complete', value:'Complete'}]
-export const selectFamily =[{name:'Iris',value:'Iris'},{name:'Tara',value:'Tara'},{name:'MS',value:'MS'},
-{name:'Kaily',value:'Kaily'},{name:'Brian Swibel',value:'Brian Swibel'},{name:'Adam Westbrook',value:'Adam Westbrook'}]
-export const selectKeyPeople =[{name:'Keyperson 1',value:'Keyperson 1'},{name:'Keyperson 2',value:'Keyperson 2'},{name:'Keyperson 3',value:'Keyperson 3'},]
-export const selectLeadPerson =[{name:'Leadperson 1',value:'Leadperson 1'},{name:'Leadperson 2',value:'Leadperson 2'},{name:'Leadperson 3',value:'Leadperson 3'},]
-export const selectInvestment =[{name:'Entertainment',value:'Entertainment'},{name:'Technology',value:'Technology'},
-{name:'Lifestyle',value:'Lifestyle'},{name:'Fashion',value:'Fashion'},{name:'Real estate',value:'Real estate'}]
-export const selectSubTypeInvestment =[{name:'TV',value:'TV'},{name:'Broadway',value:'Broadway'},{name:'Film',value:'Film'},
-{name:'Child education',value:'Child education'},
-{name:'Arts nonprofit',value:'Arts nonprofit'},{name:'Memory care', value:'Memory care'}]
+export const selectFinancials =[{name:'Complete',value:'Complete'},{name:'N/A',value:'N/A'}, {name:'Pending',value:'Pending'},{name:'Under Review', value:'Under Review'} ]
+export const selectLegal = [{name:'Complete',value:'Complete'}, {name:'In Process',value:'In Process'}, {name:'N/A',value:'N/A'}]
+export const selectBackground = [{name:'Complete',value:'Complete'}, {name:'N/A',value:'N/A'}, {name:'Pending',value:'Pending'}, {name:'Red Flag',value:'Red Flag'}]
+export const selectReviewStatus = [{name:'Complete', value:'Complete'},{name:'New',value:'New'}, {name:'Pending',value:'Pending'} ]
+export const selectFamily =[{name:'Iris Smith',value:'Iris Smith'},{name:'Tara Swibel',value:'Tara Swibel'},{name:'Michael Smith',value:'Michael Smith'},
+{name:'Kaily Smith Westbrook',value:'Kaily Smith Westbrook'},{name:'Brian Swibel',value:'Brian Swibel'},{name:'Adam Westbrook',value:'Adam Westbrook'}]
+export const selectKeyPeople =[{name:'Keyperson 1',value:'Keyperson 1'},{name:'Keyperson 2',value:'Keyperson 2'},{name:'Keyperson 3',value:'Keyperson 3'}]
+export const selectLeadPerson =[{name:'Andrea Thorn',value:'Andrea Thorn'},{name:'Cathy Sheridan',value:'Cathy Sheridan'},
+{name:'Jennifer Brown',value:'Jennifer Brown'}, {name:'Rebecca Stein',value:'Rebecca Stein'},{name:'Rick Cott',value:'Rick Cott'},
+ {name:'Seth Morton',value:'Seth Morton'}, {name:'Sweta Gupta', value:'Sweta Gupta'}, {name:'Tina Schockling', value:'Tina Schockling'}
+]
+export const selectInvestment =[{name:'Education',value:'Education'}, {name:'Energy',value:'Energy'},{name:'Entertainment',value:'Entertainment'},
+{name:'Fashion',value:'Fashion'},{name:'Franchise',value:'Franchise'}, {name:'Franchises',value:'Franchises'},
+{name:'Health & Wellness',value:'Health & Wellness'}, {name:'Manufacturing',value:'Manufacturing'},
+ {name:'Real estate',value:'Real estate'}, {name:'Retail',value:'Retail'} ,{name:'Wholesale Distribution',value:'Wholesale Distribution'}]
+export const selectSubTypeInvestment =[{name:'Arts Festival',value:'Arts Festival'}, {name:'Broadway',value:'Broadway'},
+{name:'Childhood Education',value:'Childhood Education'}, {name:'Film Production',value:'Film Production'},
+ {name:'Food',value:'Food'}, {name:'Music', value:'Music'},{name:'Script Development', value:'Script Development'},
+ {name:'Theatre', value:'Theatre'}, {name:'TV/Film', value:'TV/Film'}
+
+]
 
 export const tablePage = [
   {

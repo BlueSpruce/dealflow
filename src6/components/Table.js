@@ -24,7 +24,7 @@ class DealTable extends Component {
   }
 
   componentDidUpdate() {
-    console.log("componentDidUpdate");
+
   }
   isSelected = index => {
     return this.props.select.indexOf(index) !== -1;
@@ -68,7 +68,7 @@ class DealTable extends Component {
     };
 
     const handleRowSelection = selectedRows => {
-      console.log("Tbl selected rows " + selectedRows);
+
       //this.setState({height:200})
       //this.setState({position: 'relative',top:'100px'})
       if (!selectedRows.length) {
@@ -79,7 +79,7 @@ class DealTable extends Component {
       }
       let t = selectedRows[0];
       if (t === null) return;
-      console.log("t  " + t);
+       
       this.props.onselect(Number(t) + 1);
       this.setState({
         selected: [Number(t) + 1]

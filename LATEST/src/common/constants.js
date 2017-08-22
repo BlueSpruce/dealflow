@@ -3,8 +3,7 @@ export const routes = {
   base: 'https://insight.bluesprucecapital.net',
 };
 
-
-
+ 
 export const colors = {
   border: '#ECECEC',
   background: '#FFFFFF',

@@ -7,7 +7,7 @@ const requestHeaders = {
   'Content-Type': 'application/json',
 };
 export const postCustomField = (value1, field, value) => {
-  console.log('http.js testPost() '+[value1,field,value])
+  console.log('http.js postCustomField() '+[value1,field,value])
   //let testObj = {id:value1, }
   const options = {
      "method": "POST",
@@ -35,12 +35,12 @@ export const postsData = () => {
 }
 
 export const customFieldValue = (n ='a2302ef8-3e86-4358-979e-18eb3ce7c9d6') => {
-  console.log('customFieldValue: '+n)
+  //console.log('customFieldValue: '+n)
      return fetch(`${Constants.routes.api}custom-field-value/${n}?api-token=${toke}`);
 }
 
 const customField = (n) => {
-  console.log('customField '+n)
+//  console.log('customField '+n)
      return fetch(`${Constants.routes.api}custom-field/${n}?api-token=${toke}`);
 }
 /** NO PARAMS PASSED TO THESE STATIC VALUES < DEFAULT VALUE USED */
@@ -53,7 +53,7 @@ export const leadPerson = (n ='6d6919d7-9a8e-4ce6-a38a-a0dfdbdeae10') => {
 export const industry = (n ='21ade49f-8027-4eeb-ab86-7495b91449c2') => {
      return customField(n)
 }
-export const industrySubType = (n ='d8f02f4f-5f25-4b99-a784-4a2b7ce04408') => {
+export const industrysubtype = (n ='d8f02f4f-5f25-4b99-a784-4a2b7ce04408') => {
      return customField(n)
 }
 export const financials = (n ='08f2b033-1bbf-41e1-b32a-971ab7fb32c8') => {
@@ -77,10 +77,10 @@ export const statusNotes = (n ='dd41e818-a66d-426b-b1a9-8cef55363b35') => {
 export const minCapital = (n ='5bd7e52b-57f7-4c43-b412-578df5c3b51a') => {
      return customField(n)
 }
-export const maxCap = (n ='f839eda0-7f91-4e03-a145-effcdf265545') => {
+export const maxCapital = (n ='f839eda0-7f91-4e03-a145-effcdf265545') => {
      return customField(n)
 }
-export const capCommitted = (n ='61266009-b8b1-4776-bc58-cc758adc32be') => {
+export const capitalCommitted = (n ='61266009-b8b1-4776-bc58-cc758adc32be') => {
      return customField(n)
 }
 export const fileAttachments = (n ='83edd11e-acab-4252-8894-ba114e96fd67') => {

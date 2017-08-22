@@ -10,6 +10,10 @@ class RecommendationContainer extends Component {
   constructor(props) {
     super(props);
     this.handleChangeQuill = this.handleChangeQuill.bind(this);
+    this.state = {
+      recommendation:null,
+      previousSelect:null,
+    }
   }
 
   modules = {
@@ -44,20 +48,51 @@ class RecommendationContainer extends Component {
     "background"
   ];
   handleChangeQuill(value) {
-    this.props.f("quill", value,this.props.selectedObj.Id);
+
+    if(this.state.previousSelect == this.props.select){
+      console.log('handleChangeQuill 1  ')
+      this.setState({recommendation:value})
+    }else{
+        console.log('handleChangeQuill2 '+[this.state.previousSelect,this.props.select])
+      this.setState({recommendation:this.props.selectedObj.recommendation ? this.props.selectedObj.recommendation : null})
+      this.setState({previousSelect: this.props.select ?  this.props.select : null})
+      this.setState({previousSelectedObj: this.props.selectedObj ?  this.props.selectedObj : null})
+      this.props.f("recommendation", value, this.state.previousSelectedObj.Id);
+
+    }
+   
+   this.props.f("recommendation", value,this.props.selectedObj.Id);
+
+    //this.props.f("recommendation", value,this.props.selectedObj.Id? this.props.selectedObj.Id :null);
+  }
+
+  fValue(){
+    if(this.state.previousSelect == this.props.select){
+      console.log('fvallue  ')
+      //this.setState({recommendation:value})
+      return this.state.recommendation;
+    }else{
+        console.log('fvalue2 '+[this.state.previousSelect,this.props.select])
+    //  this.setState({recommendation:this.props.selectedObj.recommendation})
+    //  this.setState({previousSelect: this.props.select})
+      return this.props.selectedObj.recommendation ? this.props.selectedObj.recommendation : null
+    }
   }
 
   render() {
     return (
       <div>
+{this.props.selectedObj ?
         <ReactQuill
           onChange={debounce(500, this.handleChangeQuill)}
           placeholder={this.props.placeholder}
-          value={this.props.selectedObj.quill}
+          value={this.fValue()}
           theme={"snow"}
           modules={this.modules}
           formats={this.formats}
         />
+      : null
+    }
       </div>
     );
   }
@@ -65,7 +100,9 @@ class RecommendationContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => ({
   //selectedObj : state.data.items[state.data.select]
-  selectedObj: state.data.projects ? state.data.projects[state.data.select-1] : state.data.items[state.data.select-1]
+  //recommendation:  state.data.projects ? state.data.projects[state.data.select-1].recommendation : null,
+  select: state.data.projects ? state.data.select-1 : null,
+  selectedObj: state.data.projects ? state.data.projects[state.data.select-1] : null,
 });
 const mapDispatchToProps = (dispatch, ownProps) => ({
   f: (name, value, id) => {

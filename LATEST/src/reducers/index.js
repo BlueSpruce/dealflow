@@ -1,15 +1,21 @@
 //import R from 'ramda'
-import { REQUEST_POSTS, RECEIVE_POSTS } from "../actions";
+import { REQUEST_PROJECTS, RECEIVE_PROJECTS } from "../actions";
 
 import { tablePage } from "../data";
 
 const notifications = (state = [], action) => {
-  console.log("reducer action.type : " + action.type);
+  console.log("reducer action.type : " + [action.type, action.name]);
   switch (action.type) {
-    case "ACTS":
-      console.log("reducer action.name and value and Id " + [action.name, action.value, action.Id]);
-      let v = state.projects.map(x => (x.Id === action.Id ? { ...x, [action.name]: action.value } : x));
+    case "ACTS2":
+      console.log(
+        "reducer ACTS2 action.name and value and Id " +
+          [action.name, action.value, action.Id]
+      );
+      let v = state.projects.map(
+        x => (x.Id === action.Id ? { ...x, [action.name]: action.value } : x)
+      );
       return { ...state, projects: v };
+    //return {...state}
     case "SELECTOR":
       console.log("action.id " + action.id);
       return { ...state, select: Number(action.id) };
@@ -37,13 +43,31 @@ const notifications = (state = [], action) => {
         ],
         select: action.id
       };
-    case REQUEST_POSTS:
+    case "ADD-SELECTED-FIELD-TEXT":
+      let v2 = state.projects.map(
+        x => (x.Id === action.Id ? { ...x, [action.name]: action.value } : x)
+      );
+      return { ...state, projects: v2 };
+    case "ADD-SELECTED-FIELD":
+      v2 = state.projects.map(
+        x =>
+          x.Id === action.Id
+            ? {
+                ...x,
+                [action.name]: action.value
+                  ? action.value[0].trim()
+                  : action.value
+              }
+            : x
+      );
+      return { ...state, projects: v2 };
+    case REQUEST_PROJECTS:
       return {
         ...state,
         isFetching: true,
         didInvalidate: false
       };
-    case RECEIVE_POSTS:
+    case RECEIVE_PROJECTS:
       return {
         ...state,
         isFetching: false,
@@ -62,7 +86,7 @@ const notifications = (state = [], action) => {
         projectTypes: action.projectTypes
       };
     default:
-      return { items: tablePage, select: 1 };
+      return { select: 1 };
   }
 };
 

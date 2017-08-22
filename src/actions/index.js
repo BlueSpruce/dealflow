@@ -1,234 +1,165 @@
 import * as HTTP from "../common/http";
 import R from "ramda";
-import {isNumber,numberAddCommas,numberDeleteCommas,prependDollarSign,deleteDollarSign} from "../utils/utils";
-export const REQUEST_POSTS = "REQUEST_POSTS";
-export const RECEIVE_POSTS = "RECEIVE_POSTS";
-
+import {
+  isNumber,
+  numberAddCommas,
+  numberDeleteCommas,
+  prependDollarSign,
+  deleteDollarSign
+} from "../utils/utils";
+export const REQUEST_PROJECTS = "REQUEST_PROJECTS";
+export const RECEIVE_PROJECTS = "RECEIVE_PROJECTS";
 /* for UUIDs...need to post UUIDs for comboboxes */
 let allListItems = [];
 /* values for a projects custom field values ***/
 let customFieldValue;
-
 export const acts2 = ({ name, value, id }) => ({
   type: "ACTS2",
   name: name,
   value: value,
   Id: id
 });
-
 export const acts = (name, value, id) => async (dispatch, getState) => {
-  dispatch(acts2({ name, value, id }));
   console.log("acts called " + [name, value, id]);
-  /** TO DO fix hack: name not recommendation **/
-  if (name !== "recommendation") {
-    const custFieldId = getState().data.projects[getState().data.select - 1].CustomFieldValue_Id;
-    const objList = R.filter(x => x.name === name, allListItems);
-    console.log("objList : " + JSON.stringify(objList));
-    const fieldNum = R.props(["customFieldNumber"], objList[0]);
-    console.log("fieldNum " + fieldNum);
-    let strCustField = "CustomField" + fieldNum;
-    let returnValue ='';
-    if(objList[0].listItems){
-      returnValue = R.props(["Value"],R.find(x => x.Name.trim() == value, objList[0].listItems));
-    }else{
-      returnValue = value
-    }
-    const responseCustomField = await HTTP.postCustomField(
-      custFieldId,
-      strCustField,
-      returnValue
+  const custFieldId = getState().data.projects[getState().data.select - 1]
+    .CustomFieldValue_Id;
+  //  console.log('allListItems '+JSON.stringify(allListItems))
+  const objList = R.filter(x => x.name === name, allListItems);
+  //console.log('objList '+JSON.stringify(objList))
+  const fieldNum = R.props(["customFieldNumber"], objList[0]);
+  //console.log('fieldNum '+fieldNum)
+  let strCustField = "CustomField" + fieldNum;
+  let returnValue = "";
+  console.log('objList[0].listItems '+JSON.stringify(objList[0].listItems))
+  if (objList[0].listItems) {
+    console.log('R.find(x => x.Name == value, objList[0].listItems): '+JSON.stringify(R.find(x => x.Name == value, objList[0].listItems)))
+    returnValue = R.props(
+      ["Value"],
+      R.find(x => x.Name.trim() == value, objList[0].listItems)
     );
-    /* TO DO delete */
-    const cf = await responseCustomField.json();
+    console.log('returnValue '+returnValue)
+  } else {
+    returnValue = value;
   }
+  const responseCustomField = await HTTP.postCustomField(
+    custFieldId,
+    strCustField,
+    returnValue
+  );
+  dispatch(acts2({ name, value, id }));
 };
-
-export const addSelectedField = (name, value, id) => ({
+export const addSelectedFieldText = (id, name, value) => ({
+  type: "ADD-SELECTED-FIELD-TEXT",
+  name: name,
+  value: value,
+  Id: id
+});
+export const addSelectedField2 = (id, name, value) => ({
   type: "ADD-SELECTED-FIELD",
   name: name,
   value: value,
   Id: id
 });
-
+const addSelectField1 = R.curry(addSelectedField2);
 export const selectorOriginial = n => ({
   type: "SELECTOR",
   id: n
 });
-
 /************************************************************/
-/* ASYNC  */
-
+/*--------------------------------------------*/
+/* SUPPORT FUNCTIONS */
+/* function filterAndContains */
+const fC = (cfv, n, list) => {
+  const a = x => R.contains(x.Value, cfv[`CustomField${n}`].split(","));
+  return R.filter(x => a(x), list);
+};
+const curriedFC = R.curry(fC);
+const getHttp = async field => {
+  let a = await HTTP[field]();
+  let b = await a.json();
+  return b;
+};
+const pushToAllListItems = (field, name) => {
+  allListItems.push({
+    name: name,
+    listItems: field.ListItems,
+    customFieldNumber: field.FieldNumber
+  });
+};
+/*--------------------------------------------*/
 export const selector = n => async (dispatch, getState) => {
   console.log("selector action n: " + n);
-  const curProjId = getState().data.projects[getState().data.select - 1].CustomFieldValue_Id;
-  dispatch(selectorOriginial(n));
+  /** BASIC PROJECT DATA HAS BEEN LOADED BEFORE THIS CODE RUNS**/
   if (getState().data.projects) {
+    const curProjId = getState().data.projects[n - 1].Id;
+    const addSelectedField = addSelectField1(curProjId);
+    const custFieldId = getState().data.projects[n - 1].CustomFieldValue_Id;
+    dispatch(selectorOriginial(n));
     /** GET ALL CUSTOM FIELD RESULTS FOR A PROJECT **/
-    const response = await HTTP.customFieldValue(curProjId);
+    const response = await HTTP.customFieldValue(custFieldId);
     customFieldValue = await response.json();
-    console.log("CUSTOMFIELDVALUE " + JSON.stringify(customFieldValue));
-    /* FAMILY MEMBERS */
-    const response2 = await HTTP.familymembers();
-    const familymembers = await response2.json();
-    const s = R.filter(
-      x => R.contains(x.Value, customFieldValue["CustomField5"].split(",")),
-      familymembers.ListItems
-    );
-    dispatch(
-      addSelectedField("familymembers",R.map(x => x.Name, s),curProjId)
-    );
-    /*LEAD PERSON */
-    const responseLeadPerson = await HTTP.leadPerson();
-    const leadPerson = await responseLeadPerson.json();
-    console.log("leadPerson " + JSON.stringify(leadPerson));
-    const s2 = R.filter(
-      x => R.contains(x.Value, customFieldValue["CustomField18"].split(",")),
-      leadPerson.ListItems
-    );
-    dispatch(
-      addSelectedField("leadperson",R.map(x => x.Name, s2),curProjId  )
-    );
-    allListItems = [
-      {
-        name: "leadperson",
-        listItems: leadPerson.ListItems,
-        customFieldNumber: leadPerson.FieldNumber
-      }
-    ];
-    // TO DO  allListItems = R.uniq(allListItems)
+    const fcCustom = curriedFC(customFieldValue);
+    /** FOR TEXT FIELDS **/
+    const doTextField = async field => {
+      const resultField = await getHttp(field);
+      const resultValue =
+        customFieldValue[`CustomField${resultField.FieldNumber}`];
+      dispatch(addSelectedFieldText(curProjId, field, resultValue));
+      pushToAllListItems(resultField, field);
+    };
+    /** FOR COMBOBOX FIELDS ***/
+    const doSelectField = async field => {
+      const resultField = await getHttp(field);
+      const s = fcCustom(resultField["FieldNumber"], resultField["ListItems"]);
+      dispatch(addSelectedField(field, R.map(x => x.Name, s)));
+      pushToAllListItems(resultField, field);
+    };
 
-    /*INDUSTRY TYPE */
-    const responseIndustry = await HTTP.industry();
-    const industry = await responseIndustry.json();
-    console.log("industry " + JSON.stringify(industry));
-    const s3 = R.filter(
-      // TO DO  ....  x => R.contains(x.Value, `CustomField${industry.FieldNumber}`.split(",")),
-      x => R.contains(x.Value, customFieldValue["CustomField19"].split(",")),
-      industry.ListItems
-    );
-    dispatch(
-      addSelectedField("investmenttype",R.map(x => x.Name.trim(), s3),curProjId)
-    );
-    allListItems = [
-      {
-        name: "investmenttype",
-        listItems: industry.ListItems,
-        customFieldNumber: industry.FieldNumber
-      }
+    const doCurrencyField = async field => {
+      const resultField = await getHttp(field);
+      const resultValue =
+        customFieldValue[`CustomField${resultField.FieldNumber}`];
+      dispatch(
+        addSelectedFieldText(curProjId, deleteDollarSign(field), resultValue)
+      );
+    };
+    /**/
+    const selectFields = [
+      { name: "familymembers" },
+      { name: "leadPerson" },
+      { name: "industry" },
+      { name: "industrysubtype" },
+      { name: "financials" },
+      { name: "legal" },
+      { name: "background" },
+      { name: "reviewStatus" }
     ];
-    /*INDUSTRY SUBTYPE */
-    const responseSubIndustry = await HTTP.industrySubType();
-    const subIndustry = await responseSubIndustry.json();
-    console.log("subindustry " + JSON.stringify(subIndustry));
-    const s4 = R.filter(
-      x => R.contains(x.Value, customFieldValue["CustomField20"].split(",")),
-      subIndustry.ListItems
-    );
-    dispatch(
-      addSelectedField("investmentsubtype",R.map(x => x.Name.trim(), s4),curProjId)
-    );
-    /* MIN CAPITAL */
-    const minCap = customFieldValue["CustomField13"];
-    console.log("MIN CAP " + deleteDollarSign(minCap));
-    dispatch(
-      addSelectedField(
-        "minCapital",
-        deleteDollarSign(minCap),
-        curProjId
-      )
-    );
-    /* MAX CAPITAL */
-    const maxCap = customFieldValue["CustomField14"];
-    console.log("MAX CAP " + deleteDollarSign(maxCap));
-    dispatch(
-      addSelectedField( "maxCapital",deleteDollarSign(maxCap),curProjId)
-    );
-    /*  CAPITAL committed */
-    const capCommitted = customFieldValue["CustomField15"];
-    console.log(" CAPcommited " + deleteDollarSign(capCommitted));
-    dispatch(
-      addSelectedField("capitalCommitted",deleteDollarSign(capCommitted),curProjId)
-    );
-    /*Financials */
-    const responseFinancials = await HTTP.financials();
-    const financials = await responseFinancials.json();
-    console.log("financials " + JSON.stringify(financials));
-    const filterFinancials = R.filter(
-      x => R.contains(x.Value, customFieldValue["CustomField11"].split(",")),
-      financials.ListItems
-    );
-    dispatch(
-      addSelectedField(  "financials",R.map(x => x.Name.trim(), filterFinancials),curProjId)
-    );
-    /* Legal */
-    const responseLegal = await HTTP.legal();
-    const legal = await responseLegal.json();
-    const filterLegal = R.filter(
-      x => R.contains(x.Value, customFieldValue["CustomField16"].split(",")),
-      legal.ListItems
-    );
-    dispatch(
-      addSelectedField("legal",  R.map(x => x.Name.trim(), filterLegal),curProjId)
-    );
-    /* background */
-    const responseBackground = await HTTP.background();
-    const background = await responseBackground.json();
-    const filterBackground = R.filter(
-      x => R.contains(x.Value, customFieldValue["CustomField17"].split(",")),
-      background.ListItems
-    );
-    console.log(
-      "background list items " + JSON.stringify(background.ListItems)
-    );
-    console.log("background " + R.map(x => x.Name.trim(), filterBackground));
-    dispatch(
-      addSelectedField("background",R.map(x => x.Name.trim(), filterBackground),curProjId)
-    );
+    R.map(x => doSelectField(x.name), selectFields);
 
-    /*review status */
-    const responseReviewStatus = await HTTP.reviewStatus();
-    const reviewStatus = await responseReviewStatus.json();
-    const filterReviewStatus = R.filter(
-      x => R.contains(x.Value, customFieldValue["CustomField22"].split(",")),
-      reviewStatus.ListItems
-    );
-    dispatch(
-      addSelectedField("reviewStatus",R.map(x => x.Name.trim(), filterReviewStatus),curProjId)
-    );
-    /* Status notes */
-    const responseStatusNotes = await HTTP.statusNotes();
-    const reviewStatusNotes = await responseStatusNotes.json();
-    const statusNotes = customFieldValue[`CustomField${reviewStatusNotes.FieldNumber}`];
-    dispatch(
-      addSelectedField(  "statusNotes",statusNotes,curProjId)
-    );
-    allListItems = [
-      {
-        name: "statusNotes",
-        listItems: reviewStatusNotes.ListItems,  //NULL
-        customFieldNumber: reviewStatusNotes.FieldNumber
-      }
+    const currencyFields = [
+      { name: "minCapital" },
+      { name: "maxCapital" },
+      { name: "capitalCommitted" }
     ];
-    /*Key people */
-    const keyPeople = customFieldValue["CustomField21"];
-    console.log("key people " + keyPeople);
-    dispatch(
-      addSelectedField("keypeople",keyPeople,curProjId)
-    );
-    /* recommendation */
-    const recommendation = customFieldValue["CustomField24"];
-    dispatch(
-      addSelectedField("recommendation",recommendation,curProjId)
-    );
+    R.map(x => doCurrencyField(x.name), currencyFields);
+
+    const textFields = [
+      { name: "statusNotes" },
+      { name: "keypeople" },
+      { name: "recommendation" }
+    ];
+    R.map(x => doTextField(x.name), textFields);
+    /*  for all fields -- make sure unique */
+    allListItems = R.uniq(allListItems);
   }
-  //todo...change logic?
+  /** todo...change logic?  Logic to call once...  **/
   if (getState().data.projects) return;
   console.log("select getState().projects[n].id " + getState().data.select);
   dispatch(requestPostsData());
-  dispatch(requestStatuses());
-  dispatch(requestTypes());
-};
-//selector(1);
+  /* TURN OFF DISPATCH OF FOREIGN KEY FIELDS>>>GOING TO GRAPHQL ANYWAY */
+  //dispatch(requestStatuses());
+  //dispatch(requestTypes());
+}; //if (getState().data.projects)
 
 export const requestPostsData = () => async dispatch => {
   dispatch(requestPosts(posts));
@@ -238,10 +169,10 @@ export const requestPostsData = () => async dispatch => {
   return posts;
 };
 export const requestPosts = () => ({
-  type: REQUEST_POSTS
+  type: REQUEST_PROJECTS
 });
 export const receivePosts = json => ({
-  type: RECEIVE_POSTS,
+  type: RECEIVE_PROJECTS,
   posts: json,
   receivedAt: Date.now()
 });
