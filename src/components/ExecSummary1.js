@@ -33,7 +33,7 @@ class ExecSummary1 extends Component {
       return a == b
         ? {
             textDecoration: "none",
-            fontSize: "20px",
+            fontSize: "21px",
             color: this.props.muiTheme.palette.accent5Color
           }
         : { textDecoration: "underline" };
