@@ -6,40 +6,44 @@ import { darken, fade, emphasize, lighten } from "./utils/colorManipulator";
 
 const themeDefault = getMuiTheme({
   palette: {
-    primary1Color: "#607D8B", //blueGrey500
+    primary1Color: "#00502F", //dark green
     primary2Color: "#455A64", //blueGrey700
-    primary3Color: "#90A4AE", //blueGrey300
-    primary4Color: "#3e688c", //cornflower blue
-    textColor: Colors.blueGrey700,
-    primaryTextColor: Colors.blueGrey500,
+    primary3Color: "#2C3673", //dark blue
+    // primary4Color: "#3e688c", //cornflower blue
+    textColor: Colors.black,
+    primaryTextColor: Colors.black,
     secondaryTextColor: "#455A64", //blueGrey700
     //  alternateTextColor: '#ffffff',
     canvasColor: Colors.grey300,
-    accent1Color: Colors.yellow700,  //yellow
-    //accent2Color: '#4eaf7b', //green light
-    accent2Color: Colors.yellow100,
-    accent3Color: "#af7b4e", //brown light
-    accent4Color: "#CFD8DC", //grey light
+    accent1Color: "#23A596", //teal
+
+    accent2Color: "#f58c32", //orange
+    accent3Color: "#6076A9", //darj bkye grey
+    accent4Color: "#A4AECB", //light blue
+    accent5Color: "#DF5C33", //dark orange
+
     borderColor: "#9ccc65"
+    //testColor: '#9ccc65',
+    //pickerHeaderColor: deepOrange500,
   },
-  fontFamily: "Roboto, sans-serif",
+  fontFamily: "Roboto,sans-serif",
   typography: {
     //fontStyleButtonFontSize:
     //fontWeightMedium,
   },
   appBar: {
-    height: 57
-    //color: blueGrey600
+    height: 52
   },
   drawer: {
     width: 230,
-    color: "#90A4AE"
+    color: "#2C3673"
   },
   raisedButton: {
     //  primaryColor: blue600
   },
   flatButton: {
-    primaryTextColor: Colors.blueGrey200
+    primaryTextColor: "#2C3673" //dark blue
+    //fontSize: 22
   },
   menuItem: {
     selectedTextColor: Colors.cyan500,
@@ -56,11 +60,11 @@ const themeDefault = getMuiTheme({
     //selectedColor: palette.borderColor,
     //textColor: palette.textColor,
     //borderColor: palette.borderColor,
-  fontSize: 28,
+    //fontSize: 12
   },
   tableHeader: {
     //borderColor: Colors.cyan500,
-    color: Colors.green900
+    //color: Colors.green900
   },
   tableFooter: {
     //textColor: '#ffffff'
@@ -70,17 +74,16 @@ const themeDefault = getMuiTheme({
   },
 
   tableRowColumn: {
-      height: 18,
-      spacing: 20,
+    //height: 12,
+    //spacing: 20
   },
   card: {
-      titleColor: fade("#455A64", 0.87),
-      subtitleColor: fade( "#455A64", 0.54),
-
-    },
-    cardText: {
-      textColor:  "" ,
-    },
+    titleColor: fade("#455A64", 0.87),
+    subtitleColor: fade("#455A64", 0.54)
+  },
+  cardText: {
+    textColor: ""
+  }
 });
 
 export default themeDefault;

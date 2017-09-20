@@ -7,138 +7,119 @@ import {
   TableRow,
   TableRowColumn
 } from "material-ui/Table";
+import SortIcon from "material-ui/svg-icons/action/swap-vert";
+import Lightbulb from "material-ui/svg-icons/action/lightbulb-outline";
+import { numberAddCommas, prependDollarSign } from "../utils/utils";
+import ModeEdit from "material-ui/svg-icons/editor/mode-edit";
+import NoteAdd from "material-ui/svg-icons/action/note-add";
+import TableSelectField from "./TableSelectField";
+import muiThemeable from "material-ui/styles/muiThemeable";
 
-import RaisedButton from "material-ui/RaisedButton";
-
-import moment from 'moment'
-
-class DealTable extends Component {
+class TableComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      //selected: [1]
-      height: '250',
-      position:'',
-      top:''
+      absoluteSelected: 0
     };
   }
-
-  componentDidUpdate() {
-
-  }
+  componentDidUpdate() {}
   isSelected = index => {
-    return this.props.select.indexOf(index) !== -1;
+    //console.log('isSelected '+[index, this.])
+    //  return this.props.select.indexOf(index) !== -1;
+    return index == this.state.absoluteSelected;
   };
   render() {
-    const styles = {
-      floatingActionButton: {
-        margin: 0,
-        top: "auto",
-        right: 20,
-        bottom: 20,
-        left: "auto",
-        position: "fixed"
-      },
-      editButton: {
-        fill: "#334444"
-      },
-      columns: {
-        dateReceived: {
-          width: "10%"
-        },
-        familymembers: {
-          width: "15%"
-        },
-        dealname: {
-          width: "15%"
-        },
-        investmenttype: {
-          width: "15%"
-        },
-        financials: {
-          width: "10%"
-        },
-        legalreview: {
-          width: "10%"
-        },
-        reqcapital: {
-          width: "10%"
-        }
-      }
+    const getRandomCurrency = () => {
+      return prependDollarSign(
+        numberAddCommas(Math.round(Math.random() * 100000, 2))
+      );
     };
-
-    const handleRowSelection = selectedRows => {
-
-      //this.setState({height:200})
-      //this.setState({position: 'relative',top:'100px'})
-      if (!selectedRows.length) {
-        this.setState({
-          selected: this.props.select
-        });
-        return;
-      }
-      let t = selectedRows[0];
-      if (t === null) return;
-       
-      this.props.onselect(Number(t) + 1);
-      this.setState({
-        selected: [Number(t) + 1]
-      });
+    const handleClick = (type, n) => {
+      //this.props.onselect(this.state.projects[n].order);
+      this.setState({ absoluteSelected: n });
+      this.props.onselect(n + 1);
+      this.props.onEdit(type);
     };
     return (
-      <Table
-        onRowSelection={handleRowSelection}
-        fixedHeader={true}
-        height={this.state.height}
-        selectable={true}
-
-      >
-        <TableHeader adjustForCheckbox={false} displaySelectAll={false}>
-          <TableRow>
-            <TableHeaderColumn style={styles.columns.dateReceived}>
-            ACTION ?
-            </TableHeaderColumn>
-            <TableHeaderColumn style={styles.columns.dateReceived}>
-              Date
-            </TableHeaderColumn>
-            <TableHeaderColumn style={styles.columns.dealname}>
-              Deal name
-            </TableHeaderColumn>
-            <TableHeaderColumn style={styles.columns.dealname}>
-              Project type
-            </TableHeaderColumn>
-            <TableHeaderColumn style={styles.columns.dealname}>
-              Project status
-            </TableHeaderColumn>
-          </TableRow>
-        </TableHeader>
-        <TableBody   displayRowCheckbox={false} stripedRows={true} showRowHover={true} style={{position: this.state.position,top:this.state.top}}>
-          {this.props.data.map((item, i) =>
-            <TableRow
-              key={  Math.random(1000)}
-              selected={this.isSelected(i+1)}
-            >
-            <TableRowColumn style={styles.columns.dateReceived}>
-              <RaisedButton primary={true}>ACTION ?</RaisedButton>
-            </TableRowColumn>
-              <TableRowColumn style={styles.columns.dateReceived}>
-                {moment(item.ScheduleStartDate).format('l')}
-              </TableRowColumn>
-              <TableRowColumn style={styles.columns.dealname}>
-                {item.Name}
-              </TableRowColumn>
-              <TableRowColumn style={styles.columns.dealname}>
-                {item.projectType}
-              </TableRowColumn>
-              <TableRowColumn style={styles.columns.dealname}>
-                {item.statusType}
-              </TableRowColumn>
+      <div>
+        <Table fixedHeader={true} selectable={true} onRowHover={""}>
+          <TableHeader adjustForCheckbox={false} displaySelectAll={false}>
+            <TableRow>
+              <TableHeaderColumn colSpan="3">
+                Deal name <SortIcon id={2} />
+              </TableHeaderColumn>
+              <TableHeaderColumn>Minimum capital</TableHeaderColumn>
+              <TableHeaderColumn>Maximum capital</TableHeaderColumn>
+              <TableHeaderColumn>Committed capital</TableHeaderColumn>
+              <TableHeaderColumn>Legal</TableHeaderColumn>
+              <TableHeaderColumn>Background</TableHeaderColumn>
+              <TableHeaderColumn>Financials</TableHeaderColumn>
+              <TableHeaderColumn />
+              <TableHeaderColumn />
+              <TableHeaderColumn />
             </TableRow>
-          )}
-        </TableBody>
-      </Table>
+          </TableHeader>
+          <TableBody
+            ref="table-body"
+            displayRowCheckbox={false}
+            stripedRows={true}
+            showRowHover={true}
+          >
+            {this.props.data.map((item, i) => (
+              <TableRow key={"tableRow" + i} selected={this.isSelected(i)}>
+                <TableRowColumn colSpan="3">{item.Name}</TableRowColumn>
+                <TableRowColumn>{"$10,000"}</TableRowColumn>
+                <TableRowColumn>{"$200,000"}</TableRowColumn>
+                <TableRowColumn>{"$3,000,000"}</TableRowColumn>
+                <TableRowColumn>
+                  <TableSelectField
+                    choices={this.props.selectLegal}
+                    save={item.legal}
+                  />
+                </TableRowColumn>
+                <TableRowColumn>
+                  <TableSelectField
+                    choices={this.props.selectBackground}
+                    save={item.background}
+                  />
+                </TableRowColumn>
+                <TableRowColumn>
+                  <TableSelectField
+                    choices={this.props.selectFinancials}
+                    save={item.financials}
+                  />
+                </TableRowColumn>
+                <TableRowColumn>
+                  <NoteAdd
+                    id={i}
+                    onMouseUp={() => handleClick("docs", i)}
+                    onRollOver={() => console.log("icon rollover")}
+                    style={{ color: this.props.muiTheme.palette.accent5Color }}
+                  />
+                </TableRowColumn>
+                <TableRowColumn>
+                  <ModeEdit
+                    id={i}
+                    onMouseUp={() => handleClick("form", i)}
+                    onRollOver={() => console.log("icon rollover")}
+                    style={{ color: this.props.muiTheme.palette.accent5Color }}
+                  />
+                </TableRowColumn>
+                <TableRowColumn>
+                  <Lightbulb
+                    id={i}
+                    onMouseUp={() => handleClick("execSummary", i)}
+                    onRollOver={() => console.log("icon rollover")}
+                    style={{ color: this.props.muiTheme.palette.accent5Color }}
+                  />
+                </TableRowColumn>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
     );
   }
 }
 
-export default DealTable;
+export default muiThemeable()(TableComponent);

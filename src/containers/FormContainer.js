@@ -16,26 +16,98 @@ import {
   selectLeadPerson
 } from "../data";
 
+const dataSelectFields = [
+  {
+    name: "familymembers",
+    label: "Family members",
+    hint: "Family members",
+    value: "familymembers",
+    onchange: this.handleChangeFamily,
+    style: {},
+    select: selectFamily,
+    multi: true
+  },
+  {
+    name: "leadPerson",
+    label: "Lead person",
+    hint: "Lead person",
+    value: "leadPerson",
+    onchange: this.handleChangeLeadPerson,
+    style: {},
+    select: selectLeadPerson,
+    multi: false
+  },
+  {
+    name: "industry",
+    label: "Industry type",
+    hint: "Industry type",
+    value: "industry",
+    onchange: this.handleChangeInvestmentType,
+    style: {},
+    select: selectInvestment,
+    multi: true
+  },
+  {
+    name: "industrysubtype",
+    label: "Industry SubType",
+    hint: "Industry SubType",
+    value: "industrysubtype",
+    onchange: this.handleChangeInvestmentSubType,
+    style: {},
+    select: selectSubTypeInvestment,
+    multi: true
+  },
+  {
+    name: "financials",
+    label: "Financials",
+    hint: "Financials",
+    value: "financials",
+    onchange: this.handleChangeFinancials,
+    style: {},
+    select: selectFinancials
+  },
+  {
+    name: "legal",
+    label: "Legal",
+    hint: "Legal",
+    value: "legal",
+    onchange: this.handleChangeLegal,
+    style: {},
+    select: selectLegal
+  },
+  {
+    name: "background",
+    label: "Background",
+    hint: "Background",
+    value: "background",
+    onchange: this.handleChangeBackground,
+    style: {},
+    select: selectBackground
+  },
+  {
+    name: "reviewStatus",
+    label: "Review status",
+    hint: "Review status",
+    value: "reviewStatus",
+    onchange: this.handleChangeReviewStatus,
+    style: {},
+    select: selectReviewStatus
+  }
+];
+
 class FormContainer extends Component {
   render() {
     return (
       <div>
-        {this.props.projects && this.props.select
-          ? <DealForm
-              f={this.props.f}
-              selectedObj={this.props.selectedObj}
-              capitalMapping={capitalMapping}
-              selectFamily={selectFamily}
-              selectKeyPeople={selectKeyPeople}
-              selectInvestment={selectInvestment}
-              selectSubTypeInvestment={selectSubTypeInvestment}
-              selectFinancials={selectFinancials}
-              selectLegal={selectLegal}
-              selectBackground={selectBackground}
-              selectReviewStatus={selectReviewStatus}
-              selectLeadPerson={selectLeadPerson}
-            />
-          : <div>LOADING </div>}
+        {this.props.projects && this.props.select ? (
+          <DealForm
+            f={this.props.f}
+            selectedObj={this.props.selectedObj}
+            multipleOptions={dataSelectFields}
+          />
+        ) : (
+          <div>LOADING </div>
+        )}
       </div>
     );
   }
@@ -47,7 +119,7 @@ const mapStateToProps = (state, ownProps) => ({
   selectedObj: state.data.projects
     ? state.data.projects[state.data.select - 1]
     : null,
-    select: state.data.select
+  select: state.data.select
 });
 const mapDispatchToProps = (dispatch, ownProps) => ({
   f: (name, value, id) => {

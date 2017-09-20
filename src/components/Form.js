@@ -1,22 +1,33 @@
 import React, { Component } from "react";
-import R from "ramda";
-import TextField from "material-ui/TextField";
-import SelectField from "material-ui/SelectField";
-//import Toggle from "material-ui/Toggle";
 import DatePicker from "material-ui/DatePicker";
-import Divider from "material-ui/Divider";
-import theme from "react-quill/dist/quill.snow.css";
-import MenuItem from "material-ui/MenuItem";
+//import { Tabs, Tab } from "material-ui/Tabs";
+import ModeEdit from "material-ui/svg-icons/editor/mode-edit";
+import NoteAdd from "material-ui/svg-icons/action/note-add";
+import FormSelectField from "./FormSelectField";
+import FormTextField from "./FormTextField";
+import { RadioButton, RadioButtonGroup } from "material-ui/RadioButton";
+import TextField from "material-ui/TextField";
+import muiThemeable from "material-ui/styles/muiThemeable";
 import FlatButton from "material-ui/FlatButton";
-//TO DO add debounce
-//import { debounce } from "throttle-debounce";
+import SelectAndSend from "./SelectAndSend";
+import ExecSummary1 from "./ExecSummary1";
+import ExecSummary2 from "./ExecSummary2";
+import { dataExecSummary1, dataExecSummary2 } from "../common/data.js";
+import Tab1 from "./Tab1";
+import Tab2 from "./Tab2";
+import Tab3 from "./Tab3";
+import Tab4 from "./Tab4";
+//import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+//import Tabs from "muicss/lib/react/tabs";
+//import Tab from "muicss/lib/react/tab";
 
-import { isNumber, numberAddCommas, numberDeleteCommas, prependDollarSign, deleteDollarSign } from "../utils/utils";
-
-const customContentStyle = {
-  width: "100%",
-  maxWidth: "none"
-};
+import {
+  isNumber,
+  numberAddCommas,
+  numberDeleteCommas,
+  prependDollarSign,
+  deleteDollarSign
+} from "../utils/utils";
 
 class DealForm extends Component {
   constructor(props) {
@@ -25,58 +36,36 @@ class DealForm extends Component {
       text: "",
       modal: false,
       values: [],
+      tab: "a",
+      ops: null
     };
     //injectTapEventPlugin();    MOVED to App.js
-    this.handleChangeFamily = this.handleChangeFamily.bind(this)
-    this.handleCurrencyChange = this.handleCurrencyChange.bind(this)
   }
-  /* IF AND WHEN CURRY make sure props.selectedObj.Id is correct, it should eq id of current project */
-
-  handleChangeFamily = (event, index, values) => {
-    //this.setState({ values });
-    this.props.f("familymembers", values, this.props.selectedObj.Id);
-    //this.curriedBubble("familymembers", values)
-  };
-  handleChangeKeyPeople = event => {
-    this.props.f("keypeople", event.target.value, this.props.selectedObj.Id);
-  };
-  handleChangeLeadPerson = (event, index, values) => {
-  //  this.setState({ values });
-  console.log('handleChangeLeadPerson '+ [values, this.props.selectedObj.Id])
-    this.props.f("leadPerson", values, this.props.selectedObj.Id);
-  };
-  handleChangeInvestmentType = (event, index, values) => {
-    //this.setState({ values });
-    this.props.f("industry", values, this.props.selectedObj.Id);
-  };
-  handleChangeInvestmentSubType = (event, index, values) => {
-    //this.setState({ values });
-    this.props.f("industrysubtype", values, this.props.selectedObj.Id);
-  };
-  handleChangeFinancials = (event, index, values) => {
-    //this.setState({ values });
-    this.props.f("financials", values, this.props.selectedObj.Id);
-  };
-  handleChangeLegal = (event, index, values) => {
-    console.log('handleChangeLegal '+values)
-    this.setState({ values });
-    this.props.f("legal", values, this.props.selectedObj.Id);
-  };
-  handleChangeBackground = (event, index, values) => {
-    //  this.setState({ values });
-    this.props.f("background", values, this.props.selectedObj.Id);
-  };
-  handleChangeReviewStatus = (event, index, values) => {
-    //this.setState({ values });
-    this.props.f("reviewStatus", values, this.props.selectedObj.Id);
+  componentWillMount() {
+    this.setState({ ops: this.props.multipleOptions });
+  }
+  handleChangeTabs = value => {
+    console.log("handleChangeTabs " + value);
+    this.setState({
+      tab: value
+    });
   };
   handleChangeStatusNotes = event => {
     this.props.f("statusNotes", event.target.value, this.props.selectedObj.Id);
   };
+  handleChangeKeyPeople = event => {
+    this.props.f("keypeople", event.target.value, this.props.selectedObj.Id);
+  };
   handleCurrencyChange = event => {
-    console.log('handleCurrencyChange '+event.target.value)
-    console.log('isnumber '+isNumber(numberDeleteCommas(deleteDollarSign(event.target.value))))
-    if (isNumber(numberDeleteCommas(deleteDollarSign(event.target.value))) === false) {
+    console.log("handleCurrencyChange " + event.target.value);
+    console.log(
+      "isnumber " +
+        isNumber(numberDeleteCommas(deleteDollarSign(event.target.value)))
+    );
+    if (
+      isNumber(numberDeleteCommas(deleteDollarSign(event.target.value))) ===
+      false
+    ) {
       return;
     }
     this.props.f(
@@ -84,134 +73,162 @@ class DealForm extends Component {
       numberDeleteCommas(deleteDollarSign(event.target.value)),
       this.props.selectedObj.Id
     );
+    //this.refs.minCapital.focus();
   };
-  selectionRenderer = () => {
-   console.log('selectionRenderer')
-    return this.props.selectedObj.Id;
-
+  handleSelectField = (a, b) => {
+    console.log("handleSelectField f " + [a, b]);
+    this.props.f(a, b, this.props.selectedObj.Id);
   };
-  menuItems(arrLoad, arrSave) {
-      //console.log('menuItems '+JSON.stringify(arrLoad)+"|"+JSON.stringify(arrSave))
-    return arrLoad.map(item =>
-      <MenuItem
-        key={Math.random()}
-        checked={arrSave ? arrSave.indexOf(item.value) > -1 : null}
-        value={item.value}
-        primaryText={item.name}
+  fSelect(item) {
+    return (
+      <FormSelectField
+        choices={item.select}
+        save={this.props.selectedObj[item.value]}
+        item={item}
+        onchange={this.handleSelectField}
+        name={item.name}
       />
     );
   }
-  fSelect(item) {
-    return  <SelectField floatingLabelText={item.label} hint={item.hint} value={item.value} onChange={item.onchange}
-      multiple={false} style={item.style} key={Math.random()}>
-       {this.menuItems(item.select, item.value)}
-     </SelectField>
-  }
-  fText(item) {
-      return   <TextField
 
-          hintText={item.hintText}
-          floatingLabelText={item.label}
-          name={item.name}
-          onChange={item.onchange}
-          value={item.value ? item.value:''}
-          multiLine={item.multiLine}
-          rows={item.rows}
-          disabled={item.disabled}
-          key={Math.random()}
-        />
-  }
   render() {
     const { values } = this.state;
-    const {
-      selectedObj,
-      capitalMapping,
-      selectFamily,
-      selectKeyPeople,
-      selectInvestment,
-      selectSubTypeInvestment,
-      selectLegal,
-      selectBackground,
-      selectReviewStatus,
-      selectFinancials,
-      selectLeadPerson
-    } = this.props;
+    const { selectedObj } = this.props;
 
     const getDate = d => new Date(d);
-    const dataSelectFields = [
-      {name:'familymembers', label:'Family members', hint:'Family members',
-        value:selectedObj.familymembers, onchange:this.handleChangeFamily, style:{},select:selectFamily},
-      {name:'leadPerson', label:'Lead person', hint:'Lead person',
-          value:selectedObj.leadPerson, onchange:this.handleChangeLeadPerson, style:{},select:selectLeadPerson},
-      {name:'industry', label:'Industry type', hint:'Industry type',
-        value:selectedObj.industry , onchange:this.handleChangeInvestmentType , style:{},select:selectInvestment },
-      {name:'industrysubtype', label:'Industry SubType', hint:'Industry SubType',
-        value:selectedObj.industrysubtype , onchange:this.handleChangeInvestmentSubType , style:{},select:selectSubTypeInvestment },
-      {name:'financials', label:'Financials', hint:'Financials',
-        value:selectedObj.financials , onchange:this.handleChangeFinancials , style:{},select:selectFinancials },
-      {name:'legal', label:'Legal', hint:'Legal',
-          value:selectedObj.legal , onchange:this.handleChangeLegal , style:{},select:selectLegal },
-      {name:'background', label:'Background', hint:'Background',
-            value:selectedObj.background , onchange:this.handleChangeBackground , style:{},select:selectBackground },
-      {name:'reviewStatus', label:'Review status', hint:'Review status',
-              value:selectedObj.reviewStatus , onchange:this.handleChangeReviewStatus , style:{},select:selectReviewStatus },
-    ]
+
     const dataTextFields = [
-      {name:'statusnotes', label:'Status notes', hint:'Status notes...', value:selectedObj.statusNotes, onchange:this.handleChangeStatusNotes,
-      multiLine: true, rows: 2  },
-      {name:'keypeople', label:'Key people', hint:'Key people', value:selectedObj.keypeople, onchange:this.handleChangeKeyPeople,
-      multiLine: true, rows: 2  },
-    ]
+      {
+        name: "statusnotes",
+        label: "Status notes",
+        hint: "Status notes...",
+        value: selectedObj.statusNotes,
+        onchange: this.handleChangeStatusNotes,
+        multiLine: true,
+        rows: 2
+      },
+      {
+        name: "keypeople",
+        label: "Key people",
+        hint: "Key people",
+        value: selectedObj.keypeople,
+        onchange: this.handleChangeKeyPeople,
+        multiLine: true,
+        rows: 2
+      }
+    ];
     const dataTextDealName = [
-      {name:'dealname', label:'Deal name', hint:'Deal name', value:selectedObj.Name, onchange:this.handleChangeDealName,
-       disabled:true}
-    ]
+      {
+        name: "dealname",
+        label: "Deal name",
+        hint: "Deal name",
+        value: selectedObj.Name,
+        onchange: this.handleChangeDealName,
+        disabled: true
+      }
+    ];
     /*  text currency fields will call fText, but wrap value with currency util functions */
     const dataCurrency = [
-      {name:'minCapital', label:'Required minimum capital', hint:'Required minimum capital',
-      value:prependDollarSign(numberAddCommas(selectedObj.minCapital)), onchange:this.handleCurrencyChange},
-      {name:'maxCapital', label:'Required maximum capital', hint:'Required maximum capital',
-      value:prependDollarSign(numberAddCommas(selectedObj.maxCapital)), onchange:this.handleCurrencyChange},
-      {name:'capitalCommitted', label:'Capital committed!', hint:'Capital committed!',
-      value:prependDollarSign(numberAddCommas(selectedObj.capitalCommitted)), onchange:this.handleCurrencyChange}
-    ]
-
+      {
+        name: "minCapital",
+        label: "Required minimum capital",
+        hint: "Required minimum capital",
+        value: selectedObj.minCapital
+          ? prependDollarSign(numberAddCommas(selectedObj.minCapital))
+          : 0,
+        onchange: this.handleCurrencyChange
+      },
+      {
+        name: "maxCapital",
+        label: "Required maximum capital",
+        hint: "Required maximum capital",
+        value: selectedObj.maxCapital
+          ? prependDollarSign(numberAddCommas(selectedObj.maxCapital))
+          : 0,
+        onchange: this.handleCurrencyChange
+      },
+      {
+        name: "capitalCommitted",
+        label: "Capital committed",
+        hint: "Capital committed",
+        value: selectedObj.capitalCommitted
+          ? prependDollarSign(numberAddCommas(selectedObj.capitalCommitted))
+          : 0,
+        onchange: this.handleCurrencyChange
+      }
+    ];
+    const sty = (a, b) => {
+      //  console.log("sty " + [a, b]);
+      return a == b
+        ? {
+            borderWidth: "1px 1px 0px 1px",
+            borderStyle: "solid",
+            marginRight: "1px",
+            height: "28px",
+            borderTopLeftRadius: "12px",
+            borderTopRightRadius: "12px",
+            paddingBottom: "4px"
+          }
+        : {
+            backgroundColor: this.props.muiTheme.palette.accent5Color,
+            borderWidth: "1px 1px 0px 1px",
+            borderStyle: "solid",
+            marginRight: "1px",
+            height: "28px",
+            borderTopLeftRadius: "12px",
+            borderTopRightRadius: "12px",
+            paddingBottom: "4px"
+          };
+    };
     return (
-      <div style={{ padding: 20 }}>
-        { this.fText(dataTextDealName[0]) }
-        <div style={{ display: "flex" }}>
-          <DatePicker
-            hintText="Date initiated"
-            floatingLabelText="Date intiated"
-            disabled={true}
-            container="inline"
-            locale="en-US"
-            value={getDate(selectedObj.ScheduleStartDate)}
-            onChange={""}
+      <div>
+        <h2>{dataTextDealName[0].value}</h2>
+        <FlatButton
+          onClick={() => this.handleChangeTabs("a")}
+          label="Snap shot"
+          style={sty(this.state.tab, "a")}
+        />
+        <FlatButton
+          onClick={() => this.handleChangeTabs("b")}
+          label="Review"
+          style={sty(this.state.tab, "b")}
+        />
+        <FlatButton
+          onClick={() => this.handleChangeTabs("c")}
+          label="Review summary"
+          style={sty(this.state.tab, "c")}
+        />
+        <FlatButton
+          onClick={() => this.handleChangeTabs("d")}
+          label="Financials"
+          style={sty(this.state.tab, "d")}
+        />
+        {this.state.tab == "a" && (
+          <Tab1
+            selectedObj={this.props.selectedObj}
+            selectFamily={[
+              {
+                name: "familymembers",
+                label: "Family members",
+                hint: "Family members",
+                value: "familymembers",
+                onchange: this.handleChangeFamily,
+                style: {},
+                select: "selectFamily",
+                multi: true
+              }
+            ]}
           />
-          <DatePicker
-            hintText="Funding date"
-            floatingLabelText="Funding date"
-            container="inline"
-            locale="en-US"
-            value={getDate()}
-            onChange={""}
-          />
-        </div>
-        {dataSelectFields.map( item =>
-           this.fSelect(item)
         )}
-        {dataCurrency.map( item =>
-           this.fText(item)
-        )}
-        <div style={{ display: "flex" }}>
-          {dataTextFields.map( item =>
-             this.fText(item)
-        )}
-        </div>
+
+        {this.state.tab == "b" && <Tab2 selectedObj={this.props.selectedObj} />}
+
+        {this.state.tab == "c" && <Tab3 selectedObj={this.props.selectedObj} />}
+
+        {this.state.tab == "d" && <Tab4 selectedObj={this.props.selectedObj} />}
       </div>
     );
   }
 }
 
-export default DealForm;
+export default muiThemeable()(DealForm);
