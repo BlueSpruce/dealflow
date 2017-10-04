@@ -1,82 +1,201 @@
 import React, { Component } from "react";
 import { RadioButton, RadioButtonGroup } from "material-ui/RadioButton";
-import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
 import SelectField from "material-ui/SelectField";
 import MenuItem from "material-ui/MenuItem";
 import muiThemeable from "material-ui/styles/muiThemeable";
+import { generate } from "../utils/pdf";
+import moment from "moment";
+//import HTMLPreviewContainer from "../containers/HTMLPreviewContainer.js";
+import HTMLPreview from "./HTMLPreview";
+import R from "ramda";
+//import Mailto from "react-mailto";
 export const emailData = [
-  { name: "Keyperson 1", value: "Keyperson 1" },
-  { name: "Keyperson 2", value: "Keyperson 2" },
-  { name: "Keyperson 3", value: "Keyperson 3" }
+  { name: "Select recipient(s) (optional)", value: "0" },
+  { name: "Keyperson 1", value: "1", email: "a@a.com" },
+  { name: "Keyperson 2", value: "2", email: "b@b.com" },
+  { name: "Group A", value: "3", email: "c@c.com" }
+];
+const templateConfig1 = [
+  { field: "Name", label: "Deal name" },
+  { field: "dealSummary", label: "Deal summary" },
+  { field: "recommendation", label: "Recommendation" }
+];
+/*
+const templateConfig2 = [
+  { field: "Name", label: "Deal Name" },
+  { field: "company", label: "Company" },
+  { field: "industrysubtype", label: "Investment sub type (Production type)" },
+  { field: "investmentOverview", label: "Investment overview" },
+  { field: "totalProdCap", label: "Total production capitalization" },
+  { field: "capitalCommitted", label: "Capital committed" },
+  { field: "dealSummary", label: "Deal summary" },
+  { field: "keyfacts", label: "Key facts" },
+  { field: "prodBud", label: "Production budget" },
+  { field: "financialProj", label: "Financial projections" },
+  { field: "distribWaterfall", label: "Distribution waterfall" },
+  { field: "recommendation", label: "Recommendation" }
+];
+*/
+const templateConfig2 = [
+  { field: "Name", label: "Deal name" },
+  { field: "dealSummary", label: "Deal summary" },
+  //  { field: "recommendation", label: "Recommendation" },
+  { field: "distribWaterfall", label: "Distribution waterfall" },
+  { field: "financialProj", label: "Financial projections" },
+  { field: "prodBud", label: "Production budget" },
+  { field: "keyfacts", label: "Key facts" },
+  { field: "totalProdCap", label: "Total production capitalization" },
+  { field: "investmentOverview", label: "Investment overview" },
+  { field: "industrysubtype", label: "Investment sub type (Production type)" },
+  { field: "company", label: "Company" }
 ];
 
+const getTemplate = n => {
+  if (n == 1) {
+    return templateConfig1;
+  } else {
+    return templateConfig2;
+  }
+};
+
+const mergeObjAndArr = (obj, arr) => {
+  //  console.log("mergeObjAndArr " + JSON.stringify(obj));
+  const newArr = [];
+
+  R.map(x => newArr.push({ field: obj[x.field], label: x.label }), arr);
+  return newArr;
+};
 class SelectAndSend extends Component {
   constructor(props) {
     super(props);
-  }
-
-  render() {
-    const sty = () => {
-      return {
-        backgroundColor: "orange",
-        marginTop: "20px",
-        marginLeft: "20px"
-      };
+    this.state = {
+      template: 1,
+      values: [],
+      test: "&lt;a&gt;link&lt;/a&gt;"
     };
+    this.handleCreate = this.handleCreate.bind(this);
+  }
+  createMarkup(text) {
+    return { __html: text };
+  }
+  concatMarkup(data) {
+    let markup = moment().format(" MMMM Do, YYYY");
+    //let markup = "";
+    data.map(
+      item => (markup += `<h3>${item.label}</h3>` + item.field + "<br />")
+    );
+    return markup;
+  }
+  onRadio(value) {
+    console.log("onradio f " + value);
+    this.setState({ template: value });
+  }
+  handleCreate(data, selection) {
+    console.log(
+      "!mergeObjAndArr " +
+        JSON.stringify(mergeObjAndArr(data, getTemplate(selection)))
+    );
+    data = mergeObjAndArr(data, getTemplate(selection));
+    //  console.log(JSON.stringify(data));
+    //  generate(this.createMarkup(this.concatMarkup(data)));
+    //  console.log("CONCAT MARKUP " + this.concatMarkup(data));
+
+    console.log(" ");
+    let test = this.createMarkup(this.concatMarkup(data));
+
+    generate(this.concatMarkup(data));
+  }
+  handleChange = (event, index, values) => this.setState({ values: values });
+  menuItems(emailData) {
+    return emailData.map(person => (
+      <MenuItem
+        key={person.value}
+        insetChildren={true}
+        checked={this.state.values.indexOf(person.value) > -1}
+        value={person.value}
+        primaryText={person.name}
+      />
+    ));
+  }
+  selectionRenderer = values => {
+    switch (values.length) {
+      case 0:
+        return "Select recipient (optional)";
+      case 1:
+        return emailData[values[0]].name;
+      default:
+        //return `${values.length} names selected`;
+        return values.map(x => emailData[x].name + " ");
+    }
+  };
+  getEmail = () => {
+    console.log("this.state.values " + this.state.values);
+    return emailData[1].email;
+  };
+  render() {
+    const { primary2Color } = this.props.muiTheme.palette;
+
     return (
-      <div style={{ padding: "20px" }}>
-        <h2>Create a customized executive summary...</h2>
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <div>
+          <h4 style={{ color: primary2Color }}>
+            Create a customized executive summary...
+          </h4>
+          <div style={{ padding: "20px" }}>
+            1) Notify recipient(s) (optional)<br />
+            <SelectField
+              value={this.state.values}
+              multiple={true}
+              name={"email"}
+              style={{ padding: "20px" }}
+              onChange={this.handleChange}
+              selectionRenderer={this.selectionRenderer}
+            >
+              {this.menuItems(emailData)}
+            </SelectField>
+          </div>
 
-        <div style={{ padding: "20px" }}>
-          1) Select recipient of executive summary (optional)<br />
-          <SelectField
-            value={"person1"}
-            onChange={""}
-            multiple={true}
-            name={"email"}
-            style={{ padding: "20px" }}
-          >
-            <MenuItem
-              key={"email" + 1}
-              value={"person1"}
-              primaryText={"Mr. Person"}
+          <div style={{ padding: "20px" }}>
+            2) Select a template
+            <RadioButtonGroup
+              name="template"
+              defaultSelected="1"
+              style={{ padding: "20px" }}
+              onChange={event => this.onRadio(event.target.value)}
+            >
+              <RadioButton value="1" label="Iris" />
+              <RadioButton value="2" label="Rick" />
+            </RadioButtonGroup>
+          </div>
+
+          <div style={{ padding: "20px" }}>
+            3) Create executive summary<br />
+            <RaisedButton
+              label="Create"
+              backgroundColor={this.props.muiTheme.palette.accent5Color}
+              style={{
+                marginTop: "20px",
+                marginLeft: "20px"
+              }}
+              onClick={() =>
+                this.handleCreate(this.props.data, this.state.template)}
             />
-            <MenuItem
-              key={"email" + 2}
-              value={"person2"}
-              primaryText={"Mrs. Person"}
-            />
-            <MenuItem
-              key={"email" + 3}
-              value={"person3"}
-              primaryText={"Ms. Person"}
-            />
-          </SelectField>
+          </div>
         </div>
-
-        <div style={{ padding: "20px" }}>
-          2) Select a template
-          <RadioButtonGroup
-            name="template"
-            defaultSelected="1"
-            style={{ padding: "20px" }}
-          >
-            <RadioButton value="1" label="Template 1" />
-            <RadioButton value="2" label="Template 2" />
-            <RadioButton value="3" label="Template 3" />
-          </RadioButtonGroup>
-        </div>
-
-        <div style={{ padding: "20px" }}>
-          3) Create executive summary<br />
-          <RaisedButton
-            label="Create"
-            backgroundColor={this.props.muiTheme.palette.accent5Color}
-            style={{
-              marginTop: "20px",
-              marginLeft: "20px"
-            }}
+        <div
+          style={{
+            borderStyle: "solid",
+            borderWidth: " 0px 0px 0px 2px",
+            padding: "20px"
+          }}
+        />
+        <div>
+          <HTMLPreview
+            data={mergeObjAndArr(
+              this.props.data,
+              getTemplate(this.state.template)
+            )}
           />
         </div>
       </div>

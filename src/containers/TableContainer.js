@@ -1,20 +1,15 @@
 import React, { Component } from "react";
 //import PropTypes from 'prop-types';
 import { connect } from "react-redux";
-import { selector } from "../actions";
-import DealTable from "../components/Table";
+import { selector, acts } from "../actions";
 import TableComponent from "../components/Table.js";
-//import { capitalMapping } from "../data";
 import { selectFinancials, selectLegal, selectBackground } from "../data";
-
-import R from "ramda";
 
 class TableContainer extends Component {
   componentDidMount() {
     console.log("componentDidMount Table ");
     this.props.f(1);
   }
-
   render() {
     return (
       <div>
@@ -27,6 +22,7 @@ class TableContainer extends Component {
             selectFinancials={selectFinancials}
             selectLegal={selectLegal}
             selectBackground={selectBackground}
+            change={this.props.p}
           />
         ) : (
           <div>LOADING...</div>
@@ -44,10 +40,10 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
   f: x => {
     dispatch(selector(x));
   },
-
-  onClick2: id => {
-    //dispatch(deleteNotification(id));
+  p: (name, value) => {
+    dispatch(acts(name, value));
   }
+
 });
 const TableContainer2 = connect(mapStateToProps, mapDispatchToProps)(
   TableContainer

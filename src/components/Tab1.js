@@ -1,22 +1,11 @@
 import React, { Component } from "react";
-import R from "ramda";
-import FlatButton from "material-ui/FlatButton";
-import FormTextField from "./FormTextField";
 import FormSelectField from "./FormSelectField";
 import muiThemeable from "material-ui/styles/muiThemeable";
-import SelectField from "material-ui/SelectField";
-import MenuItem from "material-ui/MenuItem";
 import TextField from "material-ui/TextField";
 import {
-  capitalMapping,
   selectFamily,
-  selectKeyPeople,
   selectInvestment,
   selectSubTypeInvestment,
-  selectFinancials,
-  selectLegal,
-  selectBackground,
-  selectReviewStatus,
   selectLeadPerson
 } from "../data";
 import {
@@ -36,13 +25,29 @@ class Tab1 extends Component {
     this.setState({ selectFamily: this.props.selectFamily });
   }
 
+  handleCurrencyChange = event => {
+    console.log("handleCurrencyChange " + event.target.value);
+    if (
+      isNumber(numberDeleteCommas(deleteDollarSign(event.target.value))) ===
+      false
+    ) {
+      return;
+    }
+    this.props.f(
+      event.target.name,
+      numberDeleteCommas(deleteDollarSign(event.target.value)),
+      this.props.selectedObj.Id
+    );
+    //this.refs.minCapital.focus();
+  };
+
   fSelect(item) {
     return (
       <FormSelectField
         choices={item.select}
         save={this.props.selectedObj[item.value]}
         item={item}
-        onchange={this.handleSelectField}
+        onchange={this.props.f}
         name={item.name}
       />
     );
@@ -54,8 +59,7 @@ class Tab1 extends Component {
         label: "Family members",
         hint: "Family members",
         value: "familymembers",
-        onchange: this.handleChangeFamily,
-
+        onchange: this.onchange,
         select: selectFamily,
         multi: true
       },
@@ -64,30 +68,29 @@ class Tab1 extends Component {
         label: "Lead person",
         hint: "Lead person",
         value: "leadPerson",
-        onchange: this.handleChangeLeadPerson,
-
+        onchange: this.onchange,
         select: selectLeadPerson,
         multi: false
       },
       {
         name: "industry",
-        label: "Industry type",
+        label: "Investment type",
         hint: "Industry type",
         value: "industry",
-        onchange: this.handleChangeInvestmentType,
-
+        onchange: this.onchange,
         select: selectInvestment,
-        multi: true
+        multi: true,
+        style: { width: 300 }
       },
       {
         name: "industrysubtype",
-        label: "Industry SubType",
-        hint: "Industry SubType",
+        label: "Investment Sub Type(Production type)",
+        hint: "Investment Sub Type(Production type)",
         value: "industrysubtype",
-        onchange: this.handleChangeInvestmentSubType,
-
+        onchange: this.onchange,
         select: selectSubTypeInvestment,
-        multi: true
+        multi: true,
+        style: { width: 300 }
       }
     ];
 
@@ -117,6 +120,7 @@ class Tab1 extends Component {
             ref="company"
             multiLine="true"
             key="company"
+            value={this.props.selectedObj["company"]}
           />
         </div>
 
@@ -129,13 +133,6 @@ class Tab1 extends Component {
         >
           {this.fSelect(arr[2])}
           {this.fSelect(arr[3])}
-          <TextField
-            floatingLabelText="Production type =  SUB INDUSTRY (remove this) "
-            name="productionType"
-            ref="productionType"
-            multiLine="true"
-            key="productionType"
-          />
         </div>
 
         <div
@@ -151,6 +148,7 @@ class Tab1 extends Component {
             ref="minCapital"
             multiLine="false"
             key="minCapital"
+            onChange={this.handleCurrencyChange}
             value={
               this.props.selectedObj["minCapital"] ? (
                 prependDollarSign(
@@ -167,6 +165,7 @@ class Tab1 extends Component {
             ref="maxCapital"
             multiLine="false"
             key="maxCapital"
+            onChange={this.handleCurrencyChange}
             value={
               this.props.selectedObj["maxCapital"] ? (
                 prependDollarSign(
@@ -183,6 +182,7 @@ class Tab1 extends Component {
             ref="committedCapital"
             multiLine="false"
             key="committedCapital"
+            onChange={this.handleCurrencyChange}
             value={
               this.props.selectedObj["capitalCommitted"] ? (
                 prependDollarSign(

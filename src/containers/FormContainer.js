@@ -4,9 +4,7 @@ import { connect } from "react-redux";
 import { acts } from "../actions";
 import DealForm from "../components/Form";
 import {
-  capitalMapping,
   selectFamily,
-  selectKeyPeople,
   selectInvestment,
   selectSubTypeInvestment,
   selectFinancials,
@@ -114,7 +112,6 @@ class FormContainer extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => ({
-  //selectedObj : state.data.items[state.data.select]
   projects: state.data.projects,
   selectedObj: state.data.projects
     ? state.data.projects[state.data.select - 1]
@@ -122,8 +119,8 @@ const mapStateToProps = (state, ownProps) => ({
   select: state.data.select
 });
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  f: (name, value, id) => {
-    dispatch(acts(name, value, id));
+  f: (name, value) => {
+    dispatch(acts(name, value));
   },
 
   onClick2: id => {

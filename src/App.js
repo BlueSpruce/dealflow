@@ -2,28 +2,13 @@ import React, { Component } from "react";
 
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import ThemeDefault from "./theme-default";
-
-import { tablePage } from "./data";
-
 import { Provider } from "react-redux";
 import { configureStore } from "./store";
-
 import FormContainer from "./containers/FormContainer.js";
 import TableContainer from "./containers/TableContainer.js";
-import SelectAndSend from "./components/SelectAndSend";
-import RecommendationContainer from "./containers/RecommendationContainer.js";
-//import Documents from "./components/Documents";
-
-import { Tabs, Tab } from "material-ui/Tabs";
-import ViewList from "material-ui/svg-icons/action/view-list";
-import ModeEdit from "material-ui/svg-icons/editor/mode-edit";
-import NoteAdd from "material-ui/svg-icons/action/note-add";
+import SelectAndSendContainer from "./containers/SelectAndSendContainer";
 import { filterAndProps } from "./utils/utils";
-//import Attachment from "material-ui/svg-icons/file/attachment";
-//import FileUpload from "material-ui/svg-icons/file/file-upload";
-
 import injectTapEventPlugin from "react-tap-event-plugin";
-
 import { ContentExplorer } from "box-ui-elements";
 import messages from "box-ui-elements/lib/i18n/en-US";
 import "box-ui-elements/dist/explorer.css";
@@ -38,7 +23,7 @@ const getLocalizedMessage = (id, replacements) =>
 
 const store = configureStore();
 const dialogShowConfig = [
-  { name: "form", component: <FormContainer /> },
+  { name: "form", component: <FormContainer key="fc" /> },
   {
     name: "docs",
     component: (
@@ -48,10 +33,11 @@ const dialogShowConfig = [
         rootFolderId="0"
         logoUrl="box"
         canPreview={true}
+        key="ce"
       />
     )
   },
-  { name: "execSummary", component: <SelectAndSend /> }
+  { name: "execSummary", component: <SelectAndSendContainer key="ss" /> }
 ];
 
 class App extends Component {
@@ -72,10 +58,6 @@ class App extends Component {
         onClick={() => this.setState({ modalOpen: false })}
       />
     ];
-    const handleClose = () => {
-      console.log("handleClose f");
-      this.setState({ modalOpen: false });
-    };
     const editing = i => {
       console.log("App editing " + i);
       this.setState({ modalOpen: true, modalType: i });
@@ -84,10 +66,6 @@ class App extends Component {
       <Provider store={store}>
         <MuiThemeProvider muiTheme={ThemeDefault}>
           <div>
-            <img
-              style={{ padding: 10, height: 25 }}
-              src={require("./images/BlueSpruce_LogoOnly.png")}
-            />
             <TableContainer onEdit={editing} />
             <Dialog
               actions={actions}
@@ -96,7 +74,8 @@ class App extends Component {
               onRequestClose={() => this.setState({ modalOpen: false })}
               contentStyle={{
                 width: "90%",
-                maxWidth: "none"
+                maxWidth: "none",
+                top: "0"
               }}
               autoDetectWindowHeight={true}
               autoScrollBodyContent={true}
